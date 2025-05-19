@@ -6,17 +6,17 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Turret,
 		C3.Behaviors.solid,
 		C3.Plugins.Text,
-		C3.Plugins.Sprite.Cnds.OnCollision,
-		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.System.Acts.Scroll,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Sprite.Acts.ZMoveToObject,
-		C3.Plugins.System.Cnds.Compare
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.Text.Acts.SetVisible
 	];
 };
 self.C3_JsPropNameTable = [
@@ -25,7 +25,6 @@ self.C3_JsPropNameTable = [
 	{Sprite: 0},
 	{Sólido: 0},
 	{Sprite2: 0},
-	{Sprite3: 0},
 	{Sprite5: 0},
 	{Sprite6: 0},
 	{Sprite8: 0},
@@ -37,13 +36,20 @@ self.C3_JsPropNameTable = [
 	{Texto2: 0},
 	{Sprite7: 0},
 	{Sprite12: 0},
+	{Sprite3: 0},
+	{Golden_Chest: 0},
+	{lava: 0},
+	{lava2: 0},
+	{lava3: 0},
+	{lava4: 0},
+	{lava5: 0},
+	{Texto3: 0},
 	{moedas: 0}
 ];
 
 self.InstanceType = {
 	Sprite: class extends self.ISpriteInstance {},
 	Sprite2: class extends self.ISpriteInstance {},
-	Sprite3: class extends self.ISpriteInstance {},
 	Sprite5: class extends self.ISpriteInstance {},
 	Sprite6: class extends self.ISpriteInstance {},
 	Sprite8: class extends self.ISpriteInstance {},
@@ -54,5 +60,13 @@ self.InstanceType = {
 	Sprite4: class extends self.ISpriteInstance {},
 	Texto2: class extends self.ITextInstance {},
 	Sprite7: class extends self.ISpriteInstance {},
-	Sprite12: class extends self.ISpriteInstance {}
+	Sprite12: class extends self.ISpriteInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	Golden_Chest: class extends self.ISpriteInstance {},
+	lava: class extends self.ISpriteInstance {},
+	lava2: class extends self.ISpriteInstance {},
+	lava3: class extends self.ISpriteInstance {},
+	lava4: class extends self.ISpriteInstance {},
+	lava5: class extends self.ISpriteInstance {},
+	Texto3: class extends self.ITextInstance {}
 }
